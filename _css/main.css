@@ -283,4 +283,9 @@ footer {
   color: #eeeeee;
   padding: 50px; }
   footer p {
-    font-size: 12px; }
+    font-size: 12px;
+    margin: 20px 0; }
+  footer img {
+    vertical-align: middle;
+    margin: 0 10px;
+    width: 30px; }

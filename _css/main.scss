@@ -76,20 +76,20 @@ header{
 		min-height: 500px;
 		margin-top: 30px;
 	}
-	
+
 	img{
 		border-radius: 50px;
 		border: 1px solid $gold;
 		padding: 5px;
 	}
-	
+
 	section{
 		@include span-columns(8);
 		@include shift(2);
 		border-top: 1px solid $gold;
 		margin-top: 50px;
 		padding: 50px 0; 
-		
+
 		img{
 			border:0px;
 			border-radius:0px;
@@ -139,12 +139,12 @@ section.about-me{
 	text-align: center;
 	padding-top:30px;
 	padding-bottom: 30px;
-	
+
 	h3{
 		border-bottom: 1px solid $gold;
 		padding-bottom: 30px; 
 	} 
-	
+
 	p{
 		margin-top:30px;
 	}
@@ -159,7 +159,7 @@ section.full-work{
 		margin-top: 30px;
 		padding: 20px;
 	}
-	
+
 	img{
 		width: 100px;
 		margin-bottom: 20px;
@@ -180,13 +180,13 @@ section.work-links{
 		color: $gray;
 		margin: 20px 0;
 	}
-	
+
 	a{
 		@include link($gold, $gray);
 		line-height: 2.5;
 		margin: 20px 0;
 	}
-	
+
 }
 
 section.contact{
@@ -203,15 +203,15 @@ section.contact{
 		padding: 20px;
 		border-bottom: 1px solid $gold;
 	}
-	
+
 	p{
 		margin:30px;
 	}
-	
+
 	a{
 		@include link($gold,$dark);
 	}
-	
+
 }
 
 footer{
@@ -222,12 +222,13 @@ footer{
 	padding: 50px;
 	p{
 	font-size: 12px;
+	margin: 20px 0;
 	}
+	
+	img{
+		vertical-align: middle;
+		margin: 0 10px;
+		width: 30px;
+	}
+	
 }
-
-
-
-
-
-
-

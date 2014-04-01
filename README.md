@@ -1,1 +1,1 @@
-A simple Boilerplate with Bourbon and Neat framework.
+-- Index

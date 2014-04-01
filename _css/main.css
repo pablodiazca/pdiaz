@@ -1,0 +1,286 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/********************************************/
+/********************************************/
+/* FONTS */
+/* BREAKPOINTS */
+/* COLOURS */
+/* MIXIN */
+/********************************************/
+/********************************************/
+body {
+  background-color: #eeeeee;
+  color: #3e4046;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-weight: 700;
+  font-size: 100px;
+  margin: 15px 0;
+  text-transform: uppercase; }
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 50px; } }
+
+h3 {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 6px;
+  text-transform: uppercase; }
+  @media screen and (max-width: 800px) {
+    h3 {
+      letter-spacing: 3px; } }
+
+p {
+  line-height: 1.5;
+  font-size: 15px; }
+
+.btn {
+  border: 1px solid #dfba69;
+  color: #3e4046;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  transition: all 0.5s; }
+
+.btn:hover {
+  color: #eeeeee;
+  background: #dfba69; }
+
+.container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+header {
+  text-align: center;
+  margin-top: 80px;
+  min-height: 570px; }
+  @media screen and (max-width: 800px) {
+    header {
+      min-height: 500px;
+      margin-top: 30px; } }
+  header img {
+    border-radius: 50px;
+    border: 1px solid #dfba69;
+    padding: 5px; }
+  header section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    border-top: 1px solid #dfba69;
+    margin-top: 50px;
+    padding: 50px 0; }
+    header section:last-child {
+      margin-right: 0; }
+    header section img {
+      border: 0px;
+      border-radius: 0px;
+      padding: 0px; }
+
+section.quote {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  section.quote:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    section.quote {
+      display: none; } }
+
+.after {
+  opacity: 0;
+  transition: all 0.7s; }
+
+.before {
+  display: block;
+  opacity: 1; }
+
+section.about {
+  min-height: 700px;
+  padding: 100px 0; }
+  @media screen and (max-width: 800px) {
+    section.about {
+      min-height: 500px;
+      padding: 30px; } }
+
+section.about-me {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 8.5298%;
+  margin-right: 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  section.about-me:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    section.about-me {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 79.43148%;
+      margin-left: 10.28426%;
+      padding-top: 0px; }
+      section.about-me:last-child {
+        margin-right: 0; } }
+  section.about-me h3 {
+    border-bottom: 1px solid #dfba69;
+    padding-bottom: 30px; }
+  section.about-me p {
+    margin-top: 30px; }
+
+section.full-work {
+  background-color: #3e4046;
+  padding: 100px;
+  margin-top: 90px;
+  margin-bottom: 45px; }
+  @media screen and (max-width: 800px) {
+    section.full-work {
+      margin-top: 30px;
+      padding: 20px; } }
+  section.full-work img {
+    width: 100px;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 800px) {
+      section.full-work img {
+        margin-top: 40px; } }
+
+section.work-links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  text-align: center;
+  text-transform: uppercase; }
+  section.work-links:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    section.work-links {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%; }
+      section.work-links:last-child {
+        margin-right: 0; } }
+  section.work-links h3 {
+    color: #eeeeee;
+    margin: 20px 0; }
+  section.work-links a {
+    color: #dfba69;
+    text-decoration: none;
+    transition: all 0.5s;
+    line-height: 2.5;
+    margin: 20px 0; }
+    section.work-links a:hover {
+      color: #eeeeee; }
+
+section.contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 70px; }
+  section.contact:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    section.contact {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 79.43148%;
+      margin-left: 10.28426%; }
+      section.contact:last-child {
+        margin-right: 0; } }
+  section.contact h3 {
+    padding: 20px;
+    border-bottom: 1px solid #dfba69; }
+  section.contact p {
+    margin: 30px; }
+  section.contact a {
+    color: #dfba69;
+    text-decoration: none;
+    transition: all 0.5s; }
+    section.contact a:hover {
+      color: #3e4046; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #3e4046;
+  color: #eeeeee;
+  padding: 50px; }
+  footer p {
+    font-size: 12px; }

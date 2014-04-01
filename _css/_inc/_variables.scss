@@ -1,0 +1,29 @@
+/********************************************/
+// STORE VARIABLES
+/********************************************/
+
+
+/* FONTS */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+$opensans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/* BREAKPOINTS */
+$mobile: new-breakpoint(max-width 800px 10);
+
+/* COLOURS */
+$gray: #EEE;
+$gold: #DFBA69;
+$dark: #3E4046;
+
+/* MIXIN */
+@mixin link($normal, $hover){
+	color: $normal;
+	text-decoration: none;
+	transition:all 0.5s;
+	&:hover{
+		color: $hover;
+	}
+}
+	

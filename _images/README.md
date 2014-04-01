@@ -1,0 +1,1 @@
+Store images in this directory

@@ -1,0 +1,233 @@
+//$visual-grid:true;
+$visual-grid-color:red;
+$visual-grid-opacity:0.1;
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import '_inc/reset';
+@import '_inc/variables';  
+
+/********************************************/
+// START CSS
+/********************************************/
+
+body{
+	background-color: $gray;
+	color: $dark;
+	font-family: $opensans;
+}
+
+
+h1{
+	font-weight: 700;
+	font-size: 100px;
+	margin: 15px 0;
+	text-transform: uppercase;
+	@include media($mobile){
+		font-size: 50px;
+	}
+}
+
+h3{
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	@include media($mobile){
+		letter-spacing: 3px;
+	}
+}
+
+p{
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+.btn{
+	border: 1px solid #dfba69;
+	color: #3e4046;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
+
+.btn:hover{
+	color: $gray;
+	background:$gold;
+}
+
+.container{
+	@include outer-container;
+}
+
+header{
+	text-align: center;
+	margin-top: 80px;
+	min-height: 570px;
+	@include media($mobile){
+		min-height: 500px;
+		margin-top: 30px;
+	}
+	
+	img{
+		border-radius: 50px;
+		border: 1px solid $gold;
+		padding: 5px;
+	}
+	
+	section{
+		@include span-columns(8);
+		@include shift(2);
+		border-top: 1px solid $gold;
+		margin-top: 50px;
+		padding: 50px 0; 
+		
+		img{
+			border:0px;
+			border-radius:0px;
+			padding: 0px;
+		}
+	}
+}
+
+section.quote{
+	@include span-columns(5 of 12);
+	@include media($mobile){
+		display: none;
+	}
+}
+
+.after{
+	//display: none;
+	opacity: 0;
+	transition:all 0.7s;
+}
+
+.before{
+	display: block;
+	opacity: 1;
+}
+
+section.about{
+	min-height: 700px;
+	padding: 100px 0; 
+	@include media($mobile){
+		min-height: 500px;
+		padding: 30px;
+	}
+
+}
+
+
+section.about-me{
+	@include span-columns(6 of 12);
+	@include shift(1);
+	@include omega();
+	@include media($mobile){
+		@include span-columns(8 of 10);
+		@include shift(1);
+		padding-top: 0px;
+	}
+	text-align: center;
+	padding-top:30px;
+	padding-bottom: 30px;
+	
+	h3{
+		border-bottom: 1px solid $gold;
+		padding-bottom: 30px; 
+	} 
+	
+	p{
+		margin-top:30px;
+	}
+}
+
+section.full-work{
+	background-color: $dark;
+	padding: 100px;
+	margin-top: 90px;
+	margin-bottom: 45px;
+	@include media($mobile){
+		margin-top: 30px;
+		padding: 20px;
+	}
+	
+	img{
+		width: 100px;
+		margin-bottom: 20px;
+		@include media($mobile){
+			margin-top: 40px;
+		}
+	}
+}
+
+section.work-links{
+	@include span-columns(6);
+	@include media($mobile){
+		@include span-columns(10);
+	}
+	text-align: center;
+	text-transform: uppercase;
+	h3{
+		color: $gray;
+		margin: 20px 0;
+	}
+	
+	a{
+		@include link($gold, $gray);
+		line-height: 2.5;
+		margin: 20px 0;
+	}
+	
+}
+
+section.contact{
+	@include span-columns(8 of 12);
+	@include shift(2);
+	@include media($mobile){
+		@include span-columns(8 of 10);
+		@include shift(1);
+	}
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 70px;
+	h3{
+		padding: 20px;
+		border-bottom: 1px solid $gold;
+	}
+	
+	p{
+		margin:30px;
+	}
+	
+	a{
+		@include link($gold,$dark);
+	}
+	
+}
+
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: $dark;
+	color: $gray;
+	padding: 50px;
+	p{
+	font-size: 12px;
+	}
+}
+
+
+
+
+
+
+
